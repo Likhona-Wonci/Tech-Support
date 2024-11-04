@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Request Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>Tech Support Request Form</h1>
+</header>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="request_form.html">Request Form</a>
+    <a href="troubleshooting.html">Troubleshooting</a>
+    <a href="escalation.html">Escalation</a>
+    <a href="contact.html">Contact</a>
+</nav>
+
+<div class="content form-section">
+    <h2>Submit a Request</h2>
+    <form>
+        <label for="date">Date</label>
+        <input type="date" id="date" name="date">
+
+        <label for="time">Time</label>
+        <input type="time" id="time" name="time">
+
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name">
+
+        <label for="surname">Surname</label>
+        <input type="text" id="surname" name="surname">
+
+        <label for="caller-department">Caller Department</label>
+        <input type="text" id="caller-department" name="caller-department">
+
+        <label for="incident-title">Incident Title/Category</label>
+        <input type="text" id="incident-title" name="incident-title">
+
+        <label for="incident-description">Incident Description</label>
+        <textarea id="incident-description" name="incident-description"></textarea>
+
+        <label for="urgency">Urgency</label>
+        <select id="urgency" name="urgency">
+            <option value="very-urgent">Very Urgent</option>
+            <option value="average-urgency">Average Urgency</option>
+            <option value="not-urgent">Not Urgent</option>
+        </select>
+
+        <label for="priority">Priority</label>
+        <select id="priority" name="priority">
+            <option value="high">High</option>
+            <option value="average">Average</option>
+            <option value="low">Low</option>
+        </select>
+
+        <label for="cause">Cause of the Incident (if applicable)</label>
+        <input type="text" id="cause" name="cause">
+
+        <label for="status">Status</label>
+        <input type="text" id="status" name="status">
+
+        <button type="submit">Submit</button>
+    </form>
+</div>
+
+<footer>
+    <p>&copy; 2023 Tech Support Hub</p>
+</footer>
+
+</body>
+</html>
